@@ -1,0 +1,208 @@
+*{
+    background-color: #000!important;
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    padding: 30px;
+}
+header h1{
+    color: #ff0000;
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    font-size: 3em;
+    transition: 0.3s;
+    width: 90%;
+    float: left;
+    background-color: transparent!important;
+}
+header h1:hover{
+    transform: scale(1.15);
+    transition: 0.5s;
+    cursor: pointer;
+    color: whitesmoke;
+}
+header .formDiv{
+    width: 10%;
+    float: left;
+}
+header .formDiv a{
+    display: block;
+    color: #ff0000!important;
+    padding: 10px 0;
+    text-align: center;
+}
+header .formDiv a:hover{
+    border-bottom: 2px solid #ff0000;
+}
+header .formAgregarPeliculaseries{
+    display: none;
+}
+body{
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+.grid {
+    color: #efefef;
+    /* overflow: hidden; */
+}
+.card-image a{
+    display: block;
+    cursor: pointer;
+}
+.card-image{
+    width: 100%;
+    float: left;
+    padding: 2.5%;
+}
+.card-image .image{
+    overflow: hidden;
+    vertical-align: middle;
+    margin: 0;
+}
+.card-image .image img{
+    width: 100%;
+    transition: 0.3s;
+}
+.card-image .image img:hover{
+    transform: scale(1.15);
+    transition: 0.3s;
+}
+.card-title{
+    width: 50%;
+    float: left;
+}
+.card-title h3{
+    font-size: 28px;
+    padding: 15px 0;
+    font-family: 'DM Serif Display', serif;
+    color: #ff0000;
+}
+.card-title h4{
+    font-size: 17px;
+    font-style: italic;
+}
+.card-actores{
+    overflow: hidden;
+    width: 100%;
+    float: left;
+}
+.card-actores h4, .card-sinopsis h4{
+    font-size: 18px;
+    color: royalblue;
+    font-family: 'DM Serif Display', serif;
+}
+.card-actores h5{
+    width: 100%;
+    display: block;
+    font-size: 15px;
+}
+.card-actores figure{
+    width: 200px;
+    float: left;
+}
+.card-sinopsis{
+    float: left;
+}
+.trailer{
+    float: left;
+}
+.trailer iframe{
+    width: 100%;
+    height: 300px;
+}
+
+/* article:hover .modalseries{
+    display: block;
+} */
+
+/* MODAL */
+.modalseries{
+    display: none;
+}
+.modalseries{
+    position: absolute;
+    left: 2%;
+    right: 2%;
+    top: 40%;
+    background-color: #000;
+    z-index: 99;
+    width: 96%;
+    height: 55%;
+}
+.modalseries .actor{
+    width: 30%;
+    float: left;
+}
+.modalseries .actor figure img{
+    width: 100px;
+    height: 100px;
+}
+.modal-content img{
+    border-radius: 0;
+}
+.modal-close{
+    position: absolute;
+    top: 20px;
+    z-index: 99;
+    cursor: pointer;
+}
+.modal-close:hover{
+    background-color: #efefef39!important;
+}
+.is-active{
+    display: block!important;
+}
+
+/* FORMULARIO */
+.formAgregarPeliculaseries{
+    position: absolute;
+    top: 80px;
+    left: 80%;
+    z-index: 99;
+    padding-bottom: 20px;
+}
+form {
+    text-align: center;
+    margin: 20px 0 10px;
+}
+form input, form textarea{
+    border: 1px solid #ff0000;
+    border-radius: 0px;
+    padding: 5px 10px;
+    margin: 10px;
+    color: #efefef;
+}
+form textarea{
+    resize: none;
+}
+form button, .form_submit{
+    background-color: #ff0000!important;
+    border-radius: 0;
+    font-size: 18px;
+    border: 1px solid #ff0000;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 10px;
+    color: #efefef;
+}
+form .form_submit{
+    width: 60%;
+}
+form .form_submit:hover{
+    opacity: 0.85;
+}
+.btns_control button{
+    width: 200px;
+    height: 40px;
+    color: #ff0000;
+    border: none;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+.btns_control button:hover{
+    border-bottom: 2px solid #ff0000;
+}
+
